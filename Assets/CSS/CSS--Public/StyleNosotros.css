@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    overflow: auto;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+
+.menu--opciones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*img*/
+
+.logo-imagen img{
+    width: 130px;
+}
+
+.menu--items {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 10px;
+}
+
+.menu--items li{
+    display: inline;
+}
+
+/*items*/
+
+.menu--items a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu--items a:hover{
+    color: #b6b6b6;
+}
+
+.call--btn{
+    background-color: #74549a;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px ;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.call--btn:hover{
+    background-color: #623b89;
+}
+
+/*--------------- Style del main  -------------------------*/
+
+
+.titulo--seccion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.justific--conten{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.conten--info--SobreNosotros{
+    display: flex;
+    height: auto;
+    width: 1100px;
+    padding: 20px;
+}
+
+.conten--texto{
+    padding: 10px;
+    text-align: justify;
+}
+
+.conten--info--SobreNosotros h4{
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 28px;
+}
+
+.conten--info--SobreNosotros p{
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 21px;
+}
+
+.conten--imagen{
+    display: flex;
+    width: 1000px;
+    padding: 10px;
+}
+
+.conten--imagen img{
+    height: 100%;
+    width: 100%;
+    border-radius: 200px;
+}
+
+
+
+
+
+
+
+/*-------------------------ESTILOS DEL FOOTER--------------------------*/
+
+
+
+.footer{
+    background-image: url(../../../Assets/Image/Image--Public/Home.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.footer__containerInfo{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 150px;
+    color:#fff;
+}
+
+.footer__datosEmpresa{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.datosEmpresa__imgLogo{
+    max-width: 120px;
+}
+
+.datosEmpresa__imgLogo img{
+    max-width: 100%;
+}
+
+.footer__datosEmpresa p{
+    margin-right: 20px;
+}
+
+.containerInfoEmprsa__listImtemsEmpresa{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color:#bbb;
+}
+
+.footer__ultimasPublicaciones{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__ultimasPublicaciones h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.UltimasPublicaciones{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.LinkUltimaPublicaciones{
+    text-decoration: none;
+}
+
+.BorderBootom{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #bbb;
+    text-align: center;
+}
+
+.BorderBootom img{
+    width: 150px;
+}
+
+
+.PublicacionUltima--text h5{
+    color:#fff;
+}
+
+.PublicacionUltima--text p{
+    color:#bbb;
+}
+
+
+.footer__atajos{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.containerAtajos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.containerAtajos__title{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.containerAtajos__containerItemsAtajos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerItemsAtajos__itemsAtajos{
+    list-style: none;
+    color: #bbb;
+}
+
+.itemAtajos__linkAtajos{
+    color: #bbb;
+    text-decoration: none;
+}

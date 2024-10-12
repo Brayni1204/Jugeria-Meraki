@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /PROYECTO--JUGERIA/
+RewriteRule ^(.*)$ $1 [L]
+
+php_value auto_prepend_file C:\xampp\htdocs\PROYECTO--JUGERIA\index.php

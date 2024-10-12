@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+.list {
+    min-height: 105%;
+}
+
+.Contenido{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.contenido--contenido{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenido--titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido--titulo h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    color: #3B3B98;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el contenedor principal */
+.reguistrar--contenido {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    margin: 20px auto;
+    height: 850px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    overflow-y: auto;
+    padding: 40px 0px;
+}
+
+/* Estilo para el contenedor de los campos */
+.contenido--registrartitulo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+
+.contenido--registrartitulo label {
+    font-weight: 600;
+    font-size: 18px;
+    color: #3B3B98;
+}
+
+
+.contenido--registrartitulo input[type="text"],
+.contenido--registrartitulo textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #3B3B98;
+    background-color: #ffffff;
+    transition: border 0.3s ease, box-sshadow 0.3s ease;
+    outline: none;
+}
+
+
+.contenido--registrartitulo input[type="text"]:focus,
+.contenido--registrartitulo textarea:focus {
+    border: 1px solid #aeaed1;
+    box-shadow: 0px 4px 8px rgba(59, 59, 152, 0.2);
+}
+
+.contenido--registrartitulo input[type="text"]:hover,
+.contenido--registrartitulo textarea:hover {
+    border: 1px solid #aeaed1;
+}
+
+
+.contenido--registrartitulo textarea {
+    height: auto;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.contenido--registrarsubtitulos {
+    margin-top: 20px;
+}
+
+.contenido--registrarsubtitulos button {
+    padding: 12px 20px;
+    background-color: #3B3B98;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contenido--registrarsubtitulos button:hover {
+    background-color: #282874;
+}
+
+
+
+
+/*----------------------- ---------------------------*/
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+     
+}
+
+
+#subtitle-section-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contenido--registrarsubtitulos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada sección de subtítulo */
+.subtitulo-section {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.subtitulo-section label{
+    font-weight: 600;
+    font-size: 18px;
+    color: #3B3B98;
+}
+
+.subtitulo-section input[type = "text"], textarea{
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #3B3B98;
+    background-color: #ffffff;
+    transition: border 0.3s ease, box-sshadow 0.3s ease;
+    outline: none;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success {
+    background-color: #3B3B98;
+    color: #ffffff;
+}
+
+.btn-danger {
+    background-color: #8a1420;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}

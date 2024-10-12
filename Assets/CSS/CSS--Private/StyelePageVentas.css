@@ -1,0 +1,250 @@
+/* Agregar la fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+.list {
+    min-height: 105%;
+}
+
+
+body, .Contenido {
+    font-family: 'Poppins', sans-serif; /* Aplicar Poppins en toda la interfaz */
+}
+
+/* Estilos Generales */
+.Contenido {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f6f9;
+    font-size: 16px; /* Tamaño de letra general */
+    font-weight: 400;
+    color: #333; /* Color de texto */
+}
+
+/* Botones generales */
+.btn {
+    border: none;
+    padding: 15px 25px; /* Tamaño de botón más grande */
+    cursor: pointer;
+    border-radius: 8px; /* Bordes más redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 18px; /* Tamaño de letra en botones */
+    font-weight: 500; /* Peso de fuente en botones */
+}
+
+.btn:hover {
+    filter: brightness(85%);
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+.fa-solid{
+    color: red;
+}
+/* Botones de ventas */
+.ventas-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ventas-container .btn {
+    background-color: #3B3B98; /* Azul de Bootstrap */
+    color: #fff;
+}
+
+.ventas-container .btn.venta-activa {
+    background-color: #28a745; /* Verde */
+}
+
+/* Sección de Jugos y Búsqueda */
+.seccion-jugos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.conten--productos{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.ver-jugos {
+    background-color: #3B3B98;
+    color: #fff;
+    font-size: 18px;
+}
+
+#codigo-barras {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 16px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px; /* Aumentar tamaño de letra en las tablas */
+}
+
+th, td {
+    padding: 5px; /* Aumentar padding en celdas */
+    text-align: center;
+    border: 1px solid #ddd;
+    font-weight: 500;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-size: 20px; /* Tamaño de letra más grande en encabezados */
+}
+
+td {
+    background-color: #f8f9fa;
+}
+
+#productos-lista tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Modal Jugos */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: #ffffff;
+    padding: 40px; /* Aumentar padding */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    height: 70%;
+    overflow-y: auto;
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 15px; /* Tamaño de botón cerrar modal */
+    border-radius: 8px;
+}
+
+
+.tabla-productos{
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    height: 500px;
+    
+}
+
+.tabla-productos div{
+    padding: 10px;
+}
+
+.tabla-productos thead th {
+    top: 0; /* Fija la posición en la parte superior del contenedor */
+    z-index: 2; /* Asegura que el encabezado esté por encima del contenido */
+    background-color: #3B3B98; /* Color de fondo del encabezado */
+    color: #ffffff; /* Color de texto del encabezado */
+    overflow-y: auto;
+}
+
+.total-pago {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conte--monto {
+    width: 40%;
+}
+
+.total-pago div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#total-pagar, #vuelto {
+    padding: 15px; /* Aumentar tamaño de los campos */
+    font-size: 22px; /* Tamaño de letra mayor */
+    font-weight: bold;
+    color: #3B3B98;
+    border: none;
+    background: #f0f0f0;
+    width: 180px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#tipo-pago {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 18px; /* Tamaño de letra en select */
+}
+
+#monto-vuelto input[type="number"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 180px;
+    font-size: 18px;
+}
+
+/* Botones de Acción */
+.realizar-venta {
+    background-color: #3B3B98;
+    color: #fff;
+    font-size: 20px; /* Aumentar tamaño de letra */
+}
+
+.realizar-venta:hover {
+    background-color: #3B3B98;
+}
+
+.cancelar {
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 20px;
+}
+
+.cancelar:hover {
+    background-color: #c82333;
+}

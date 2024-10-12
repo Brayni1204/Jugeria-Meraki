@@ -1,0 +1,149 @@
+
+:root {
+    --colorResaltador: #000;
+    --colorGeneral: #FFFFFF;
+    --colorSecundario: #d6d5d5;
+    --colorAuxiliar: #181717;
+}
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Titillium;
+}
+
+body {
+   
+    background-color: var(--colorGeneral);
+
+}
+
+
+/*nav usuario */
+
+.informacionAdicional {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: var(--colorAuxiliar);
+}
+
+.botonInicio {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--colorAuxiliar);
+    margin-left: 30px;
+    border-radius: 15px;
+    padding: 2px 10px;
+    background-color: var(--colorGeneral);
+}
+
+.botonInicio:hover {
+    background-color: var(--colorResaltador);
+    color: var(--colorGeneral);
+    transition: .2s;
+}
+
+.informacion {
+    display: flex;
+    align-items: center;
+    color: var(--colorGeneral);
+    padding-right: 20px;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.groupInfoUsuario {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+/*nav*/
+.nav {
+    width: 250px;
+}
+
+.list {
+    width: 100%;
+    min-height: 200%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorResaltador);
+}
+
+.list__item {
+    
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click {
+    cursor: pointer;
+}
+
+.list__button {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+   
+    padding: 15px 30px 5px 30px;
+
+}
+
+.arrow .list__arrow {
+    transform: rotate(90deg);
+}
+
+.list__arrow {
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.nav__link {
+    color: var(--colorGeneral);
+    display: flex;
+    padding: 10px 0;
+    text-decoration: none;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.nav__link--inside {
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+
+}
+
+.nav__link--inside:hover {
+    background-color: var(--colorGeneral);
+    color: var(--colorResaltador);
+
+}
+
+.list__show {
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid var(--colorGeneral);
+    list-style: none;
+    transition: height 0.4s;
+    height: 0;
+}
+
+.Contenedorcontenido{
+    display: flex;
+}
